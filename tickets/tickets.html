@@ -1,0 +1,1212 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Choose demonstration tickets for an EventSphere event.">
+
+		<title>Tickets | EventSphere</title>
+		
+		<!-- EventSphere Favicon -->
+		<link rel="icon" type="image/png" href="../images/favicon.png">
+		
+		<!-- Bootstrap 5.3 CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css"
+			  rel="stylesheet"
+			  integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX"
+			  crossorigin="anonymous">
+
+		<!-- EventSphere CSS -->
+		<link rel="stylesheet" href="../styles/style.css">
+	</head>
+	<body>
+
+	<!-- =========================================
+		 SHARED NAVIGATION
+	 ========================================= -->
+
+	<header class="site-header">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+					<a class="navbar-brand" href="../index.html">
+						<img src="../images/logo.png" alt="EventSphere - Home" class="eventsphere-logo">
+					</a>
+				</a>
+				<button class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#mainNavigation"
+						aria-controls="mainNavigation"
+						aria-expanded="false"
+						aria-label="Open navigation">
+
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mainNavigation">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<!-- Replace # when the Events-page
+								 location is agreed by the group. -->
+							<a class="nav-link" href="#">Events</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" ref="tickets.html">Tickets</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../contact/contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+
+	<!-- =========================================
+		 EVENT SUMMARY
+
+		 All event information is temporary.
+		 Replace it with the final group content.
+	========================================= -->
+
+	<section class="event-summary py-4 py-lg-5">
+		<div class="container">
+			<div class="row align-items-center g-4">
+
+				<!-- Event-image placeholder -->
+
+				<div class="col-12 col-md-4 col-lg-3">
+					<div class="event-image-placeholder">
+						<span class="placeholder-label">EVENT IMAGE</span>
+						<small>Group content placeholder</small>
+					</div>
+				</div>
+
+				<!-- Event description -->
+
+				<div class="col-12 col-md-8 col-lg-9">
+					<p class="event-category mb-2">FEATURED EVENT</p>
+					<h1 class="event-title">Sample Event</h1>
+					<div class="event-meta d-flex flex-column flex-lg-row flex-wrap gap-2 gap-lg-4">
+						<span>
+							<span aria-hidden="true">📅</span>
+							Saturday, 12 December 2026
+						</span>
+						<span>
+							<span aria-hidden="true">🕒</span>
+							19:30
+						</span>
+						<span>
+							<span aria-hidden="true">📍</span>
+							Sample Arena, Dublin
+						</span>
+					</div>
+
+					<p class="event-description mt-3 mb-3">
+
+						This temporary information allows the
+						EventSphere ticket-booking component to be
+						developed while the group's final events,
+						images and descriptions are being agreed.
+
+					</p>
+
+					<!-- Bootstrap opens the Offcanvas panel -->
+
+					<button class="btn btn-outline-light rounded-pill px-4"
+							type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#eventInformation"
+							aria-controls="eventInformation">
+
+						More Info
+
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================================
+		 IMPORTANT INFORMATION STRIP
+	========================================= -->
+
+	<section class="important-information">
+		<div class="container py-3">
+			<div class="d-flex flex-column flex-sm-row align-items-sm-center gap-2">
+				<p class="mb-0">
+					<strong>Important:</strong>
+
+					Final age restrictions, venue conditions and
+					accessibility information will appear here.
+
+				</p>
+				<button class="important-link"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#eventInformation"
+						aria-controls="eventInformation">
+
+					More information
+
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================================
+		 BOOKING PROGRESS
+	========================================= -->
+
+	<section class="booking-progress-section py-4">
+		<div class="container">
+			<div class="booking-progress">
+				<div class="progress-step active" data-step="1">
+					<div class="step-number">1</div>
+					<span>Tickets</span>
+				</div>
+				<div class="progress-line"></div>
+				<div class="progress-step" data-step="2">
+					<div class="step-number">2</div>
+					<span>Details</span>
+				</div>
+				<div class="progress-line"></div>
+				<div class="progress-step" data-step="3">
+					<div class="step-number">3</div>
+					<span>Review</span>
+				</div>
+				<div class="progress-line"></div>
+				<div class="progress-step" data-step="4">
+					<div class="step-number">4</div>
+					<span>Confirmed</span>
+				</div>
+				<div class="progress-line"></div>
+				<div class="progress-step" data-step="5">
+					<div class="step-number">5</div>
+					<span>Ticket</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================================
+		 TICKET-SELECTION AREA
+	========================================= -->
+
+	<section class="ticket-booking-section py-5" id="ticketSelectionStep">
+		<div class="container">
+			<div class="row g-4 align-items-start">
+
+				<!-- =================================
+					 LEFT:
+					 EVENT OR VENUE VISUAL
+				================================== -->
+
+				<div class="col-12 col-lg-8">
+					<article class="card venue-card">
+						<div class="card-header d-flex justify-content-between align-items-center gap-3">
+							<div>
+								<p class="section-label mb-1">EVENT INFORMATION</p>
+								<h2 class="h5 mb-0">Venue / Event Visual</h2>
+							</div>
+							<span class="badge placeholder-badge">Placeholder</span>
+						</div>
+						<div class="card-body">
+							<div class="venue-placeholder">
+								<div class="venue-placeholder-content">
+									<div class="venue-placeholder-icon" aria-hidden="true">◉</div>
+									<h3 class="h4">Event / Venue Visual</h3>
+									<p class="mb-2">
+
+										This area is reserved for the
+										final group content.
+
+									</p>
+
+									<p class="mb-0">
+
+										The area may contain an event
+										poster, venue map, seating
+										illustration or other agreed
+										EventSphere visual.
+
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer venue-card-footer">
+							<strong>Group integration:</strong>
+
+							Final imagery, branding and event information
+							will be inserted after the shared design is
+							agreed.
+
+						</div>
+					</article>
+				</div>
+				
+				<!-- =================================
+					 RIGHT:
+					 FIND TICKETS
+				================================== -->
+
+				<div class="col-12 col-lg-4">
+					<aside class="card ticket-card">
+						<div class="card-body p-4">
+							<p class="section-label mb-1">BOOK YOUR PLACE</p>
+							<h2 class="h3 mb-2">Find Tickets</h2>
+							<p class="ticket-introduction mb-4">Choose the number of tickets required.</p>
+
+							<!-- Standard -->
+
+							<div class="ticket-option" data-ticket-type="Standard" data-price="35">
+								<div class="ticket-details">
+									<h3>Standard Admission</h3>
+									<p>General event admission</p>
+									<div>
+										<strong>€35.00</strong>
+										<small>per ticket</small>
+									</div>
+								</div>
+								<div class="quantity-selector" aria-label="Standard ticket quantity">
+									<button class="quantity-button decrease-button" type="button" aria-label="Decrease standard tickets">−</button>
+									<span class="quantity-value" aria-live="polite">0</span>
+									<button class="quantity-button increase-button" type="button" aria-label="Increase standard tickets">+</button>
+								</div>
+							</div>
+
+							<!-- Premium -->
+
+							<div class="ticket-option" data-ticket-type="Premium" data-price="50">
+								<div class="ticket-details">
+									<h3>Premium Admission</h3>
+									<p>Enhanced event admission</p>
+									<div>
+										<strong>€50.00</strong>
+										<small>per ticket</small>
+									</div>
+
+								</div>
+								<div class="quantity-selector" aria-label="Premium ticket quantity"> 
+									<button class="quantity-button decrease-button" type="button" aria-label="Decrease premium tickets">−</button>
+									<span class="quantity-value" aria-live="polite">0</span>
+									<button class="quantity-button increase-button" type="button" aria-label="Increase premium tickets">+</button>
+								</div>
+							</div>
+
+							<!-- VIP -->
+
+							<div class="ticket-option"  data-ticket-type="VIP" data-price="75">
+								<div class="ticket-details">
+									<h3>VIP Admission</h3>
+									<p>Premium experience package</p>
+									<div>
+										<strong>€75.00</strong>
+										<small>per ticket</small>
+									</div>
+								</div>
+								<div class="quantity-selector" aria-label="VIP ticket quantity">
+									<button class="quantity-button decrease-button" type="button" aria-label="Decrease VIP tickets">−</button>
+									<span class="quantity-value" aria-live="polite">0</span>
+									<button class="quantity-button increase-button" type="button" aria-label="Increase VIP tickets">+</button>
+								</div>
+							</div>
+
+							<!-- Order summary -->
+
+							<section class="order-summary mt-4" aria-labelledby="orderSummaryHeading">
+								<h3 id="orderSummaryHeading" class="h6 mb-3">Your Order</h3>
+								<div class="summary-row">
+									<span>Tickets</span>
+									<span id="totalTickets">0</span>
+								</div>
+								<div class="summary-row">
+									<span>Subtotal</span>
+									<span id="subtotal">€0.00</span>
+								</div>
+								<div class="summary-row">
+									<span>Booking fee</span>
+									<span id="bookingFee">€0.00</span>
+								</div>
+								<div class="summary-row summary-total">
+									<strong>Total</strong>
+									<strong id="totalPrice">€0.00</strong>
+								</div>
+							</section>
+							<button class="btn event-primary-button w-100 mt-3" id="continueButton" type="button" disabled>Continue</button>
+							<p class="demo-notice text-center mt-3 mb-0">
+
+								Demonstration booking only.
+								No payment will be processed.
+
+							</p>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- =========================================
+     STEP 2: BOOKING DETAILS
+
+     Hidden initially.
+     JavaScript displays this section when the
+     visitor selects tickets and presses Continue.
+	========================================= -->
+
+	<section class="booking-details-section py-5 d-none" id="bookingDetailsStep">
+		<div class="container">
+			<div class="row g-4 align-items-start">
+
+				<!-- =================================
+					 CUSTOMER DETAILS
+				================================== -->
+
+				<div class="col-12 col-lg-7">
+					<div class="card booking-details-card">
+						<div class="card-body p-4 p-md-5">
+							<p class="section-label mb-1">STEP 2 OF 5</p>
+							<h2 class="h2 mb-2">Complete Your Booking</h2>
+							<p class="booking-details-introduction mb-4">
+								Enter the details that should appear
+								on the EventSphere demonstration ticket.
+							</p>
+							<form id="bookingDetailsForm" novalidate>
+
+								<!-- Full Name -->
+								<div class="mb-4">
+									<label for="customerName" class="form-label">Full name
+										<span class="required-marker">*</span>
+									</label>
+									<input type="text" class="form-control" id="customerName" name="customerName" autocomplete="name" aria-describedby="customerNameError customerNameHelp" required>
+									<div class="validation-message" id="customerNameError" aria-live="polite"></div>
+									<div class="form-text" id="customerNameHelp">Enter the ticket holder's full name.</div>
+								</div>
+
+								<!-- Email -->
+								<div class="mb-4">
+									<label for="customerEmail" class="form-label">Email address
+										<span class="required-marker">*</span>
+									</label>
+									<input type="email" class="form-control" id="customerEmail" name="customerEmail" autocomplete="email" aria-describedby="customerEmailError customerEmailHelp" required>
+									<div class="validation-message" id="customerEmailError" aria-live="polite"></div>
+									<div class="form-text" id="customerEmailHelp">The demonstration booking confirmation will use this email address.</div>
+								</div>
+
+								<!-- Confirm Email -->
+								<div class="mb-4">
+									<label for="confirmEmail" class="form-label">Confirm email address
+										<span class="required-marker">*</span>
+									</label>
+									<input type="email" class="form-control" id="confirmEmail" name="confirmEmail" autocomplete="email" aria-describedby="confirmEmailError confirmEmailHelp" required>
+									<div class="validation-message" id="confirmEmailError" aria-live="polite"></div>
+									<div class="form-text" id="confirmEmailHelp">Re-enter the email address to make sure it is correct.</div>
+								</div>
+
+								<!-- Phone -->
+								<div class="mb-4">
+									<label for="customerPhone" class="form-label">Phone number
+										<span class="optional-marker">Optional</span>
+									</label>
+									<input type="tel" class="form-control" id="customerPhone" name="customerPhone" autocomplete="tel" aria-describedby="customerPhoneError customerPhoneHelp" placeholder="+353 87 123 4567">
+									<div class="validation-message" id="customerPhoneError" aria-live="polite"></div>
+									<div class="form-text" id="customerPhoneHelp">If entered, the number must begin with +.</div>
+								</div>
+
+								<!-- Demonstration Notice -->
+								<div class="booking-demo-alert" role="note">
+									<strong>Demonstration booking</strong>
+									<p class="mb-0 mt-1">
+										EventSphere does not process real
+										payments. Any ticket generated by
+										this project will be clearly marked
+										as a facsimile ticket.
+									</p>
+								</div>
+
+								<!-- Navigation Buttons -->
+								<div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+									<button class="btn btn-outline-dark flex-grow-1" id="backToTicketsButton" type="button">← Back to Tickets</button>
+									<button class="btn event-primary-button flex-grow-1" id="reviewBookingButton" type="button" disabled>Review Booking</button>
+								</div>
+								<p class="next-version-notice text-center mt-3 mb-0">Complete all required fields to continue.</p>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<!-- =================================
+					 BOOKING SUMMARY
+				================================== -->
+
+				<div class="col-12 col-lg-5">
+					<aside class="card details-summary-card">
+						<div class="card-body p-4">
+							<p class="section-label mb-1">YOUR SELECTION</p>
+							<h2 class="h4 mb-1">Sample Event</h2>
+							<p class="details-event-meta">
+								Saturday, 12 December 2026<br>
+								19:30<br>
+								Sample Arena, Dublin
+							</p>
+							<hr>
+
+							<!-- Selected ticket breakdown -->
+							<div id="detailsTicketBreakdown">
+								<p class="text-secondary mb-0">Selected tickets will appear here.</p>
+							</div>
+							<hr>
+							<div class="summary-row">
+								<span>Total tickets</span>
+								<span id="detailsTotalTickets">0</span>
+							</div>
+							<div class="summary-row">
+								<span>Subtotal</span>
+								<span id="detailsSubtotal">€0.00</span>
+							</div>
+							<div class="summary-row">
+								<span>Booking fee</span>
+								<span id="detailsBookingFee">€0.00</span>
+							</div>
+							<div class="summary-row summary-total">
+								<strong>Total</strong>
+								<strong id="detailsTotalPrice">€0.00</strong>
+							</div>
+							<p class="demo-notice text-center mt-3 mb-0">
+								Demonstration booking only.
+								No payment will be processed.
+							</p>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- =========================================
+		 STEP 3: REVIEW BOOKING
+
+		 Hidden initially.
+		 JavaScript displays this section after
+		 the booking details pass validation.
+	========================================= -->
+	<section class="review-booking-section py-5 d-none" id="reviewBookingStep">
+		<div class="container">
+			<div class="review-page-title text-center mb-5">
+				<p class="section-label mb-1">STEP 3 OF 5</p>
+				<h2 class="display-6 fw-bold mb-2">Review Your Booking</h2>
+				<p class="text-secondary mb-0">
+					Please check the event, ticket and customer
+					details before confirming the booking.
+				</p>
+			</div>
+			<div class="row g-4 align-items-start">
+
+				<!-- =================================
+					 LEFT:
+					 EVENT AND TICKET DETAILS
+				================================== -->
+				<div class="col-12 col-lg-7">
+					<article class="card review-card">
+						<div class="card-body p-4 p-md-5">
+
+							<!-- Event Summary -->
+							<div class="review-section">
+								<p class="section-label mb-1">EVENT</p>
+								<h3 class="h2 mb-3">Sample Event</h3>
+								<div class="review-event-meta">
+									<p>
+										<span aria-hidden="true">📅</span>
+										Saturday, 12 December 2026
+									</p>
+									<p>
+										<span aria-hidden="true">🕒</span>
+										19:30
+									</p>
+									<p>
+										<span aria-hidden="true">📍</span>
+										Sample Arena, Dublin
+									</p>
+								</div>
+							</div>
+							<hr class="review-divider">
+
+							<!-- Ticket Breakdown -->
+							<div class="review-section">
+								<div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+									<div>
+										<p class="section-label mb-1">TICKETS</p>
+										<h3 class="h5 mb-0">Your Selection</h3>
+									</div>
+									<span class="review-ticket-count" id="reviewTicketCountBadge">0 tickets</span>
+								</div>
+								<div id="reviewTicketBreakdown">
+									<p class="text-secondary mb-0">Selected tickets will appear here.</p>
+								</div>
+							</div>
+							<hr class="review-divider">
+
+							<!-- Price Summary -->
+							<div class="review-price-summary">
+								<div class="summary-row">
+									<span>Total tickets</span>
+									<span id="reviewTotalTickets">0</span>
+								</div>
+								<div class="summary-row">
+									<span>Subtotal</span>
+									<span id="reviewSubtotal">€0.00</span>
+								</div>
+								<div class="summary-row">
+									<span>Booking fee</span>
+									<span id="reviewBookingFee">€0.00</span>
+								</div>
+								<div class="summary-row summary-total">
+									<strong>Total</strong>
+									<strong id="reviewTotalPrice">€0.00</strong>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<!-- =================================
+					 RIGHT:
+					 CUSTOMER DETAILS
+				================================== -->
+				<div class="col-12 col-lg-5">
+					<aside class="card review-customer-card">
+						<div class="card-body p-4">
+							<p class="section-label mb-1">TICKET HOLDER</p>
+							<h2 class="h4 mb-4">Customer Details</h2>
+							<dl class="review-customer-details">
+
+								<!-- Full Name -->
+								<div class="review-detail-row">
+									<dt>Full name</dt>
+									<dd id="reviewCustomerName">Not provided</dd>
+								</div>
+
+								<!-- Email -->
+								<div class="review-detail-row">
+									<dt>Email address</dt>
+									<dd id="reviewCustomerEmail">Not provided</dd>
+								</div>
+
+								<!-- Phone -->
+								<div class="review-detail-row">
+									<dt>Phone number</dt>
+									<dd id="reviewCustomerPhone">Not provided</dd>
+								</div>
+							</dl>
+							<div class="review-notice mt-4" role="note">
+								<strong>Please check carefully</strong>
+								<p class="mb-0 mt-1">
+									The customer name will appear on the
+									EventSphere facsimile ticket. No real
+									payment will be processed.
+								</p>
+							</div>
+
+							<!-- Navigation -->
+							<div class="d-grid gap-3 mt-4">
+								<button class="btn btn-outline-dark" id="backToDetailsButton" type="button">← Back to Details</button>
+								<button class="btn event-primary-button" id="confirmBookingButton" type="button">Confirm Booking</button>
+							</div>
+							<p class="next-version-notice text-center mt-3 mb-0"> This is a demonstration booking. No real transaction will take place.</p>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- =========================================
+		 STEP 4: BOOKING CONFIRMED
+
+		 Hidden initially.
+		 JavaScript displays this section after
+		 Confirm Booking is selected.
+	========================================= -->
+	<section class="booking-confirmed-section py-5 d-none" id="bookingConfirmedStep">
+		<div class="container">
+			<div class="confirmation-wrapper">
+
+				<!-- Confirmation Icon -->
+				<div class="confirmation-icon" aria-hidden="true">✓</div>
+
+				<!-- Confirmation Heading -->
+				<p class="section-label text-center mb-1">STEP 4 OF 5</p>
+				<h2 class="display-6 fw-bold text-center mb-3">Booking Confirmed</h2>
+				<p class="confirmation-introduction text-center mx-auto mb-4">
+					Your EventSphere demonstration booking has
+					been created successfully.
+				</p>
+
+				<!-- Important Demonstration Notice -->
+				<div class="confirmation-warning" role="note">
+					<strong>Demonstration booking only</strong>
+					<p class="mb-0 mt-1">
+						No real payment or ticket transaction has
+						taken place. Any ticket generated by
+						EventSphere will be clearly marked as a
+						facsimile ticket.
+					</p>
+				</div>
+
+				<!-- Booking Reference -->
+				<div class="booking-reference-card">
+					<p class="booking-reference-label">BOOKING REFERENCE</p>
+					<p class="booking-reference-value" id="confirmedBookingReference" aria-live="polite">ES-000000</p>
+					<p class="booking-reference-help mb-0">
+						Keep this reference with your
+						demonstration ticket.
+					</p>
+				</div>
+
+				<!-- Confirmation Summary -->
+				<div class="card confirmation-summary-card">
+					<div class="card-body p-4 p-md-5">
+						<div class="row g-4">
+
+							<!-- Event Details -->
+							<div class="col-12 col-md-6">
+								<p class="section-label mb-1">EVENT</p>
+								<h3 class="h4 mb-3">Sample Event</h3>
+								<div class="confirmation-information">
+									<p>
+										<strong>Date</strong>
+										Saturday, 12 December 2026
+									</p>
+									<p>
+										<strong>Time</strong>
+										19:30
+									</p>
+									<p>
+										<strong>Venue</strong>
+										Sample Arena, Dublin
+									</p>
+								</div>
+							</div>
+
+							<!-- Booking Details -->
+							<div class="col-12 col-md-6">
+								<p class="section-label mb-1">BOOKING</p>
+								<h3 class="h4 mb-3">Booking Summary</h3>
+								<div class="confirmation-information">
+									<p>
+										<strong>Ticket holder</strong>
+										<span id="confirmedCustomerName">Not provided</span>
+									</p>
+									<p>
+										<strong>Total tickets</strong>
+										<span id="confirmedTicketCount">0</span>
+									</p>
+									<p>
+										<strong>Total</strong>
+										<span id="confirmedTotalPrice">€0.00</span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<hr class="confirmation-divider">
+
+						<!-- Ticket Breakdown -->
+						<div>
+							<p class="section-label mb-2">SELECTED TICKETS</p>
+							<div id="confirmedTicketBreakdown">
+								<p class="text-secondary mb-0">Selected tickets will appear here.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Next Step -->
+				<div class="confirmation-actions">
+					<button class="btn event-primary-button confirmation-ticket-button" id="generateTicketButton" type="button">🎟 Generate My Ticket</button>
+					<p class="next-version-notice text-center mt-3 mb-0">Your tickets will be generated as clearly marked demonstration facsimiles.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<!-- =========================================
+		 STEP 5: FACSIMILE TICKETS
+
+		 Hidden initially.
+		 JavaScript generates one ticket for each
+		 selected admission.
+	========================================= -->
+
+	<section class="facsimile-ticket-section py-5 d-none" id="facsimileTicketStep">
+		<div class="container">
+
+			<!-- Page Introduction -->
+			<div class="ticket-page-heading text-center mb-5">
+				<p class="section-label mb-1">STEP 5 OF 5</p>
+				<h2 class="display-6 fw-bold mb-2">Your EventSphere Tickets</h2>
+				<p class="text-secondary mx-auto mb-0">
+					Your demonstration tickets have been generated.
+					These tickets are facsimiles and are not valid
+					for admission to any event.
+				</p>
+			</div>
+
+			<!-- Important Facsimile Notice -->
+			<div class="facsimile-page-warning" role="note">
+				<strong>Demonstration tickets only</strong>
+				<p class="mb-0 mt-1">
+					These tickets were created for the EventSphere
+					CA2 project. No purchase or real ticket transaction
+					has taken place.
+				</p>
+			</div>
+			
+			<!-- =========================================
+					 SIMULATED EMAIL CONFIRMATION
+			========================================= -->
+
+			<div class="ticket-email-notice" role="status">
+				<div class="ticket-email-icon" aria-hidden="true">✉</div>
+				<div>
+					<strong>Ticket details sent</strong>
+					<p class="mb-1">
+						A copy of your demonstration ticket details
+						has been sent to
+						<strong id="ticketEmailAddress">your email address</strong>.
+					</p>
+					<small>
+						Simulation only for the EventSphere CA2 project.
+						No email has actually been sent.
+					</small>
+				</div>
+			</div>
+
+			<!-- JavaScript inserts tickets here -->
+			<div class="generated-tickets" id="generatedTickets" aria-live="polite"></div>
+
+			<!-- Ticket Actions -->
+			<div class="ticket-page-actions">
+				<button class="btn btn-outline-dark" id="backToConfirmationButton" type="button">← Back to Confirmation</button>
+				<button class="btn event-primary-button" id="printTicketsButton" type="button">🖨 Print Tickets</button>
+				<a class="btn btn-dark" href="../index.html">✓ Finish</a>
+			</div>
+			<p class="print-help text-center mt-3 mb-0">
+				The print view will display only the generated
+				facsimile tickets.
+			</p>
+		</div>
+	</section>
+
+	</main>
+
+	<!-- =========================================
+		 BOOTSTRAP OFFCANVAS:
+		 EVENT INFORMATION
+	========================================= -->
+
+	<div class="offcanvas offcanvas-end event-offcanvas"
+		 tabindex="-1"
+		 id="eventInformation"
+		 aria-labelledby="eventInformationHeading">
+
+		<div class="offcanvas-header"> 
+			<h2 class="offcanvas-title h5" id="eventInformationHeading">Event Information</h2>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close event information"></button>
+		</div>
+		<div class="offcanvas-body">
+			<h3 class="h3 mb-3">Sample Event</h3>
+			<div class="offcanvas-event-meta mb-4">
+				<p class="mb-2">
+					<span aria-hidden="true">📅</span>
+					Saturday, 12 December 2026
+				</p>
+				<p class="mb-2">
+					<span aria-hidden="true">🕒</span>
+					19:30
+				</p>
+				<p class="mb-0">
+					<span aria-hidden="true">📍</span>
+					Sample Arena, Dublin
+				</p>
+			</div>
+			<section class="information-section">
+				<h4 class="h6">Please Note</h4>
+				<p>
+
+					Final age restrictions and venue conditions will
+					be inserted here during group integration.
+
+				</p>
+			</section>
+			<section class="information-section">
+				<h4 class="h6">Event Details</h4>
+				<p>
+
+					This section will contain the extended event
+					description supplied for the Events page.
+
+				</p>
+			</section>
+			<section class="information-section">
+				<h4 class="h6">Ticket Limits</h4>
+				<p>
+
+					The demonstration booking will eventually permit
+					a maximum of ten tickets in each ticket category.
+
+				</p>
+			</section>
+			<section class="information-section">
+
+				<h4 class="h6">Accessibility</h4>
+				<p>
+
+					Final accessibility and venue-support information
+					will be presented in this section.
+
+				</p>
+			</section>
+			<section class="information-section">
+
+				<h4 class="h6">Further Information</h4>
+				<p>
+
+					Additional event policies and group-supplied
+					information can be placed here.
+
+				</p>
+			</section>
+		</div>
+	</div>
+
+	<!-- =========================================
+		 SHARED EVENTSPHERE FOOTER
+	========================================= -->
+	<footer class="site-footer">
+		<div class="container py-5">
+			<div class="row g-4">
+
+				<!-- EventSphere Brand -->
+				<div class="col-12 col-lg-4">
+					<div class="footer-brand">
+						<h2 class="h4">Event
+							<span>Sphere</span>
+						</h2>
+						<p class="mb-1">Discover • Book • Experience</p>
+						<small>Events bring people together.</small>
+					</div>
+				</div>
+
+				<!-- Explore -->
+				<div class="col-6 col-md-4 col-lg-2">
+					<h3 class="footer-heading">Explore</h3>
+					<ul class="footer-links">
+						<li>
+							<a href="../index.html">Home</a>
+						</li>
+						<li>
+							<a href="../events/events.html">Events</a>
+						</li>
+						<li>
+							<a href="tickets.html">Tickets</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Help -->
+				<div class="col-6 col-md-4 col-lg-3">
+					<h3 class="footer-heading">Help</h3>
+					<ul class="footer-links">
+						<li>
+							<a href="../contact/contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="../contact/contact.html">FAQs</a>
+						</li>
+						<li>
+							<a href="../contact/contact.html">Accessibility</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- About -->
+				<div class="col-12 col-md-4 col-lg-3">
+					<h3 class="footer-heading">About</h3>
+					<ul class="footer-links">
+						<li>
+							<a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal"> About EventSphere</a>
+						</li>
+						<li>
+							<a href="#" data-bs-toggle="modal" data-bs-target="#projectModal">CA2 Group Project</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Lower Footer -->
+		<div class="footer-bottom">
+			<div class="container py-3">
+				<div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+					<div class="d-flex flex-wrap justify-content-center gap-3">
+						<a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy</a>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms</a>
+						<a href="#" data-bs-toggle="modal" data-bs-target="#cookiesModal">Cookies</a>
+					</div>
+					<p class="mb-0">© 2026 EventSphere • CA2 Group 3</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- PRIVACY MODAL -->
+	<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h2 class="modal-title fs-5" id="privacyModalLabel">EventSphere Privacy</h2>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+
+				<!-- Modal Content -->
+				<div class="modal-body">
+					<p>
+						EventSphere is a demonstration website
+						developed as part of the Web Design and
+						Client Side Scripting CA2 Group Project.
+					</p>
+					<p>
+						Information entered into demonstration forms,
+						including names, email addresses and optional
+						phone numbers, is used only within the current
+						browser session to demonstrate website
+						functionality.
+					</p>
+					<p>
+						EventSphere does not store this information in
+						a database or use it for real ticket purchases,
+						payments or event admissions.
+					</p>
+					<p class="mb-0">
+						Any booking references, confirmations and
+						tickets generated by EventSphere are
+						demonstration data only.
+					</p>
+				</div>
+
+				<!-- Modal Footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- TERMS MODAL -->
+	<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h2 class="modal-title fs-5" id="termsModalLabel">EventSphere Terms & Conditions</h2>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+
+				<!-- Modal Content -->
+				<div class="modal-body">
+					<p>
+						EventSphere is an educational demonstration
+						website created for the Web Design and
+						Client Side Scripting CA2 Group Project.
+					</p>
+					<p>
+						Event information, ticket prices, booking
+						references and availability shown on this
+						website are provided for demonstration
+						purposes only.
+					</p>
+					<p>
+						EventSphere does not process real payments,
+						complete real bookings or provide admission
+						to any event.
+					</p>
+					<p>
+						Tickets generated by EventSphere are
+						facsimile demonstration tickets only and
+						are clearly marked as not valid for
+						admission.
+					</p>
+					<p class="mb-0">
+						By using this demonstration website, users
+						acknowledge that all bookings, transactions
+						and tickets are simulated as part of the
+						CA2 project.
+					</p>
+				</div>
+
+				<!-- Modal Footer -->
+				<div class="modal-footer"> 
+					<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- COOKIES MODAL -->
+	<div class="modal fade" id="cookiesModal" tabindex="-1" aria-labelledby="cookiesModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h2 class="modal-title fs-5" id="cookiesModalLabel">EventSphere Cookies</h2>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+
+				<!-- Modal Content -->
+				<div class="modal-body">
+					<p>
+						EventSphere is an educational demonstration
+						website developed for the Web Design and
+						Client Side Scripting CA2 Group Project.
+					</p>
+					<p>
+						EventSphere does not currently use advertising,
+						analytics or tracking cookies.
+					</p>
+					<p>
+						The demonstration booking process operates
+						within the current browser session and does
+						not use cookies to store customer details,
+						booking information or payment information.
+					</p>
+					<p>
+						If cookies or similar technologies were added
+						to a future version of EventSphere, visitors
+						would be informed about their purpose before
+						non-essential cookies were used.
+					</p>
+					<p class="mb-0">
+						The current EventSphere CA2 website therefore
+						does not require visitors to accept
+						non-essential cookies.
+					</p>
+				</div>
+
+				<!-- Modal Footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ABOUT EVENTSPHERE MODAL -->
+	<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title fs-5" id="aboutModalLabel">About EventSphere</h2>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						<strong>EventSphere</strong> is a demonstration
+						event discovery and ticket-booking website
+						designed to make finding and exploring events
+						simple and engaging.
+					</p>
+					<p>
+						The website brings event information, ticket
+						selection, booking support and customer help
+						together in one consistent experience.
+					</p>
+					<p>
+						Visitors can explore events, review event
+						information, select demonstration tickets,
+						calculate booking costs and move through a
+						multi-step booking process.
+					</p>
+					<p class="mb-0">
+						EventSphere has been designed with responsive
+						layouts, accessibility and clear navigation
+						in mind so that the experience remains usable
+						across desktop, tablet and mobile devices.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- CA2 GROUP PROJECT MODAL -->
+	<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title fs-5" id="projectModalLabel">CA2 Group Project</h2>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						EventSphere is being developed as the
+						<strong>Continuous Assessment 2</strong>
+						group project for
+						<strong>
+							Web Design and Client Side Scripting
+							(HDCAIMLFE)
+						</strong>.
+					</p>
+					<p>
+						The project is being completed by
+						<strong>Group 3</strong> and demonstrates the
+						use of HTML5, CSS, Bootstrap 5.3 and
+						client-side JavaScript.
+					</p>
+					<p>
+						The website includes responsive page layouts,
+						interactive event and ticket features, form
+						validation, accessibility considerations and
+						a simulated ticket-booking experience.
+					</p>
+					<p>
+						Some event information, ticket data, booking
+						references and generated tickets are fictional
+						and are included solely to demonstrate the
+						functionality of the website.
+					</p>
+					<p class="mb-0">
+						All tickets generated by EventSphere are
+						facsimiles and are not valid for admission
+						to any real event.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- BACK TO TOP BUTTON -->
+	<button id="backToTopButton" class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- EventSphere JavaScript -->
+	<script src="../js/script.js"></script>
+
+	</body>
+</html>
