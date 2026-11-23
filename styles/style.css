@@ -627,7 +627,7 @@ button, a {
 
 .event-category,
 .section-label {
-    color: #8b6fff;
+    color: #6246c7;
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -2242,4 +2242,5 @@ button, a {
     .ticket-email-notice {
         align-items: flex-start;
     }
+
 }
